@@ -1,0 +1,118 @@
+{
+  "semantic_model_version": "1.0",
+  "description": "Fabric IQ semantic graph for certification prerequisites, role-skill alignment, and learning path optimization",
+  "nodes": {
+    "roles": [
+      {"id": "R001", "name": "Cloud Solutions Architect", "seniority": "senior", "domain": "infrastructure"},
+      {"id": "R002", "name": "Data Engineer", "seniority": "mid", "domain": "data"},
+      {"id": "R003", "name": "Security Engineer", "seniority": "mid", "domain": "security"},
+      {"id": "R004", "name": "DevOps Engineer", "seniority": "mid", "domain": "engineering"},
+      {"id": "R005", "name": "AI/ML Engineer", "seniority": "senior", "domain": "ai"},
+      {"id": "R006", "name": "Power Platform Developer", "seniority": "mid", "domain": "business_apps"},
+      {"id": "R007", "name": "Software Engineer", "seniority": "mid", "domain": "engineering"},
+      {"id": "R008", "name": "IT Manager", "seniority": "senior", "domain": "operations"},
+      {"id": "R009", "name": "Cloud Security Architect", "seniority": "senior", "domain": "security"},
+      {"id": "R010", "name": "Data Scientist", "seniority": "mid", "domain": "data"}
+    ],
+    "certifications": [
+      {"id": "AZ-900", "level": "fundamentals", "domain": "azure", "exam_code": "AZ-900"},
+      {"id": "AZ-204", "level": "associate", "domain": "developer", "exam_code": "AZ-204"},
+      {"id": "AZ-400", "level": "expert", "domain": "devops", "exam_code": "AZ-400"},
+      {"id": "DP-100", "level": "associate", "domain": "data_science", "exam_code": "DP-100"},
+      {"id": "SC-900", "level": "fundamentals", "domain": "security", "exam_code": "SC-900"},
+      {"id": "AI-102", "level": "associate", "domain": "ai_engineer", "exam_code": "AI-102"},
+      {"id": "PL-400", "level": "associate", "domain": "power_platform", "exam_code": "PL-400"},
+      {"id": "MS-900", "level": "fundamentals", "domain": "microsoft365", "exam_code": "MS-900"}
+    ],
+    "skills": [
+      {"id": "SK001", "name": "azure_fundamentals", "domain": "azure", "complexity": 1},
+      {"id": "SK002", "name": "azure_functions", "domain": "serverless", "complexity": 3},
+      {"id": "SK003", "name": "cosmos_db", "domain": "database", "complexity": 3},
+      {"id": "SK004", "name": "ci_cd_pipelines", "domain": "devops", "complexity": 4},
+      {"id": "SK005", "name": "infrastructure_as_code", "domain": "devops", "complexity": 4},
+      {"id": "SK006", "name": "azure_machine_learning", "domain": "ml", "complexity": 5},
+      {"id": "SK007", "name": "mlops", "domain": "ml", "complexity": 5},
+      {"id": "SK008", "name": "responsible_ai", "domain": "ai_ethics", "complexity": 3},
+      {"id": "SK009", "name": "azure_openai", "domain": "ai", "complexity": 4},
+      {"id": "SK010", "name": "cognitive_services", "domain": "ai", "complexity": 3},
+      {"id": "SK011", "name": "zero_trust", "domain": "security", "complexity": 4},
+      {"id": "SK012", "name": "identity_management", "domain": "security", "complexity": 3},
+      {"id": "SK013", "name": "power_apps", "domain": "low_code", "complexity": 2},
+      {"id": "SK014", "name": "power_automate", "domain": "automation", "complexity": 2},
+      {"id": "SK015", "name": "dataverse", "domain": "data", "complexity": 3}
+    ]
+  },
+  "edges": {
+    "prerequisite_of": [
+      {"from": "AZ-900", "to": "AZ-204", "weight": 1.0, "type": "hard_prerequisite"},
+      {"from": "AZ-204", "to": "AZ-400", "weight": 1.0, "type": "hard_prerequisite"},
+      {"from": "AZ-900", "to": "DP-100", "weight": 0.9, "type": "recommended"},
+      {"from": "AZ-900", "to": "AI-102", "weight": 0.8, "type": "recommended"},
+      {"from": "AZ-900", "to": "SC-900", "weight": 0.5, "type": "complementary"},
+      {"from": "SC-900", "to": "AZ-500", "weight": 1.0, "type": "hard_prerequisite"},
+      {"from": "MS-900", "to": "MS-700", "weight": 0.9, "type": "recommended"},
+      {"from": "PL-900", "to": "PL-400", "weight": 1.0, "type": "hard_prerequisite"},
+      {"from": "DP-900", "to": "DP-100", "weight": 0.8, "type": "recommended"},
+      {"from": "AI-900", "to": "AI-102", "weight": 0.9, "type": "recommended"}
+    ],
+    "role_certification_alignment": [
+      {"role": "R001", "certification": "AZ-204", "fit_score": 0.85},
+      {"role": "R001", "certification": "AZ-400", "fit_score": 0.90},
+      {"role": "R002", "certification": "DP-100", "fit_score": 0.95},
+      {"role": "R003", "certification": "SC-900", "fit_score": 0.70},
+      {"role": "R004", "certification": "AZ-400", "fit_score": 0.98},
+      {"role": "R004", "certification": "AZ-204", "fit_score": 0.80},
+      {"role": "R005", "certification": "AI-102", "fit_score": 0.96},
+      {"role": "R005", "certification": "DP-100", "fit_score": 0.88},
+      {"role": "R006", "certification": "PL-400", "fit_score": 0.99},
+      {"role": "R007", "certification": "AZ-204", "fit_score": 0.95},
+      {"role": "R008", "certification": "MS-900", "fit_score": 0.85},
+      {"role": "R009", "certification": "SC-900", "fit_score": 0.75},
+      {"role": "R010", "certification": "DP-100", "fit_score": 0.97}
+    ],
+    "skill_certification_coverage": [
+      {"skill": "SK002", "certification": "AZ-204", "coverage": 0.90},
+      {"skill": "SK003", "certification": "AZ-204", "coverage": 0.85},
+      {"skill": "SK004", "certification": "AZ-400", "coverage": 0.95},
+      {"skill": "SK005", "certification": "AZ-400", "coverage": 0.90},
+      {"skill": "SK006", "certification": "DP-100", "coverage": 0.95},
+      {"skill": "SK007", "certification": "DP-100", "coverage": 0.88},
+      {"skill": "SK008", "certification": "DP-100", "coverage": 0.75},
+      {"skill": "SK008", "certification": "AI-102", "coverage": 0.80},
+      {"skill": "SK009", "certification": "AI-102", "coverage": 0.92},
+      {"skill": "SK010", "certification": "AI-102", "coverage": 0.90},
+      {"skill": "SK011", "certification": "SC-900", "coverage": 0.70},
+      {"skill": "SK012", "certification": "SC-900", "coverage": 0.75},
+      {"skill": "SK013", "certification": "PL-400", "coverage": 0.95},
+      {"skill": "SK014", "certification": "PL-400", "coverage": 0.90},
+      {"skill": "SK015", "certification": "PL-400", "coverage": 0.85}
+    ]
+  },
+  "learning_paths": {
+    "cloud_architect": ["AZ-900", "AZ-104", "AZ-204", "AZ-305"],
+    "devops_expert": ["AZ-900", "AZ-104", "AZ-204", "AZ-400"],
+    "data_scientist": ["AZ-900", "DP-900", "AI-900", "DP-100"],
+    "ai_engineer": ["AZ-900", "AI-900", "DP-900", "AI-102"],
+    "security_specialist": ["AZ-900", "SC-900", "AZ-500", "SC-300"],
+    "power_platform_dev": ["AZ-900", "MS-900", "PL-900", "PL-400"],
+    "software_developer": ["AZ-900", "AZ-104", "AZ-204"],
+    "it_manager": ["MS-900", "AZ-900", "MS-700"]
+  },
+  "weekly_hours_recommendations": {
+    "fundamentals_level": {
+      "min_hours": 4,
+      "max_hours": 8,
+      "optimal_hours": 6
+    },
+    "associate_level": {
+      "min_hours": 6,
+      "max_hours": 15,
+      "optimal_hours": 10
+    },
+    "expert_level": {
+      "min_hours": 8,
+      "max_hours": 20,
+      "optimal_hours": 14
+    }
+  }
+}

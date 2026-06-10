@@ -1,0 +1,112 @@
+[
+  {
+    "employee_id": "EMP001",
+    "certification_id": "AZ-305",
+    "completion_percentage": 62,
+    "last_activity_date": "2026-06-08",
+    "assessment_scores": [72, 68, 75],
+    "at_risk": false,
+    "completed_modules": ["identity_governance", "compute_solutions", "data_storage"],
+    "remaining_modules": ["networking", "monitoring", "migration_strategies"],
+    "estimated_completion_date": "2026-07-15"
+  },
+  {
+    "employee_id": "EMP002",
+    "certification_id": "DP-100",
+    "completion_percentage": 45,
+    "last_activity_date": "2026-06-05",
+    "assessment_scores": [65, 70],
+    "at_risk": true,
+    "completed_modules": ["azure_ml_workspace", "data_ingestion"],
+    "remaining_modules": ["feature_engineering", "model_training", "mlops", "model_deployment"],
+    "estimated_completion_date": "2026-08-01"
+  },
+  {
+    "employee_id": "EMP003",
+    "certification_id": "AZ-500",
+    "completion_percentage": 78,
+    "last_activity_date": "2026-06-09",
+    "assessment_scores": [80, 85, 78],
+    "at_risk": false,
+    "completed_modules": ["identity_access", "platform_protection", "security_operations"],
+    "remaining_modules": ["data_application_protection"],
+    "estimated_completion_date": "2026-06-28"
+  },
+  {
+    "employee_id": "EMP004",
+    "certification_id": "AZ-400",
+    "completion_percentage": 55,
+    "last_activity_date": "2026-06-07",
+    "assessment_scores": [74, 69],
+    "at_risk": true,
+    "completed_modules": ["devops_transformation", "work_item_management", "source_control"],
+    "remaining_modules": ["ci_pipeline", "cd_release", "dependency_management", "infrastructure_as_code", "feedback_monitoring"],
+    "estimated_completion_date": "2026-08-10"
+  },
+  {
+    "employee_id": "EMP005",
+    "certification_id": "AI-102",
+    "completion_percentage": 88,
+    "last_activity_date": "2026-06-10",
+    "assessment_scores": [85, 90, 88, 92],
+    "at_risk": false,
+    "completed_modules": ["azure_ai_services", "computer_vision", "natural_language", "knowledge_mining", "azure_openai"],
+    "remaining_modules": ["conversational_ai"],
+    "estimated_completion_date": "2026-06-20"
+  },
+  {
+    "employee_id": "EMP006",
+    "certification_id": "PL-400",
+    "completion_percentage": 30,
+    "last_activity_date": "2026-06-01",
+    "assessment_scores": [60, 58],
+    "at_risk": true,
+    "completed_modules": ["power_platform_fundamentals"],
+    "remaining_modules": ["canvas_apps", "model_driven_apps", "power_automate", "custom_connectors", "pcf_controls"],
+    "estimated_completion_date": "2026-09-01"
+  },
+  {
+    "employee_id": "EMP007",
+    "certification_id": "AZ-204",
+    "completion_percentage": 70,
+    "last_activity_date": "2026-06-09",
+    "assessment_scores": [78, 82, 76],
+    "at_risk": false,
+    "completed_modules": ["azure_compute", "azure_storage", "azure_security", "azure_monitoring"],
+    "remaining_modules": ["api_management", "event_based_solutions"],
+    "estimated_completion_date": "2026-07-05"
+  },
+  {
+    "employee_id": "EMP008",
+    "certification_id": "MS-700",
+    "completion_percentage": 40,
+    "last_activity_date": "2026-06-03",
+    "assessment_scores": [66, 71],
+    "at_risk": true,
+    "completed_modules": ["plan_configure_network", "identity_access"],
+    "remaining_modules": ["manage_teams", "manage_meetings", "monitor_troubleshoot"],
+    "estimated_completion_date": "2026-08-15"
+  },
+  {
+    "employee_id": "EMP009",
+    "certification_id": "SC-300",
+    "completion_percentage": 52,
+    "last_activity_date": "2026-06-08",
+    "assessment_scores": [77, 80],
+    "at_risk": false,
+    "completed_modules": ["identity_management", "authentication_methods", "access_management"],
+    "remaining_modules": ["identity_governance", "privileged_identity_management"],
+    "estimated_completion_date": "2026-07-20"
+  },
+  {
+    "employee_id": "EMP010",
+    "certification_id": "DP-100",
+    "completion_percentage": 35,
+    "last_activity_date": "2026-06-06",
+    "assessment_scores": [68, 64],
+    "at_risk": true,
+    "completed_modules": ["azure_ml_workspace", "data_ingestion"],
+    "remaining_modules": ["feature_engineering", "model_training", "automl", "mlops", "responsible_ai"],
+    "estimated_completion_date": "2026-08-30"
+  }
+]

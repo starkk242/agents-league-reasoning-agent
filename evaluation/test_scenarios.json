@@ -1,0 +1,166 @@
+[
+  {
+    "scenario_id": "SC001",
+    "name": "Software Engineer — AZ-204 Happy Path",
+    "description": "Standard learner flow: Software Engineer with moderate meeting load targeting AZ-204",
+    "input": {
+      "employee_id": "EMP007",
+      "certification_goal": "AZ-204",
+      "role": "Software Engineer",
+      "skill_gaps": ["azure_functions", "cosmos_db", "api_management"],
+      "completed_certifications": ["AZ-900"],
+      "completion_percentage": 70,
+      "last_activity_date": "2026-06-09",
+      "assessment_answers": {"Q01": "A", "Q02": "A", "Q03": "A", "Q04": "A", "Q05": "A"}
+    },
+    "expected_outputs": {
+      "curator": {
+        "min_resources": 3,
+        "should_include_citations": true,
+        "required_topics": ["azure_functions", "cosmos_db"]
+      },
+      "study_plan": {
+        "max_hours_per_week": 15,
+        "should_have_schedule": true,
+        "min_weeks": 2
+      },
+      "engagement": {
+        "escalation_expected": false,
+        "reminder_slot_expected": "afternoon"
+      },
+      "assessment": {
+        "score_above": 0,
+        "should_include_feedback": true,
+        "should_include_citations": true
+      }
+    },
+    "evaluation_criteria": {
+      "accuracy_relevance": "Resources must cite AZ-204 knowledge base documents",
+      "reasoning_steps": "Each agent must log ≥3 reasoning steps",
+      "reliability": "Must complete without errors",
+      "ux": "Must produce readable narrative output"
+    }
+  },
+  {
+    "scenario_id": "SC002",
+    "name": "AI/ML Engineer — AI-102 Assessment Pass",
+    "description": "High-completion learner ready for exam — assessment should pass",
+    "input": {
+      "employee_id": "EMP005",
+      "certification_goal": "AI-102",
+      "role": "AI/ML Engineer",
+      "skill_gaps": ["azure_openai", "responsible_ai"],
+      "completed_certifications": ["AI-900", "DP-100"],
+      "completion_percentage": 88,
+      "last_activity_date": "2026-06-10",
+      "assessment_answers": {"Q01": "A", "Q02": "A", "Q03": "A", "Q04": "A", "Q05": "A"}
+    },
+    "expected_outputs": {
+      "curator": {
+        "min_resources": 2,
+        "should_include_citations": true
+      },
+      "engagement": {
+        "escalation_expected": false,
+        "status_expected": "exam_ready"
+      },
+      "assessment": {
+        "should_recommend_exam": true,
+        "should_include_citations": true
+      }
+    },
+    "evaluation_criteria": {
+      "accuracy_relevance": "Must correctly identify AI-102 as nearly complete and recommend exam",
+      "reasoning_steps": "Engagement agent should detect exam_ready status",
+      "reliability": "No errors on high-completion scenario",
+      "creativity": "Should suggest next cert after AI-102"
+    }
+  },
+  {
+    "scenario_id": "SC003",
+    "name": "Power Platform Developer — At-Risk Escalation",
+    "description": "Learner with high meeting load and low completion — triggers manager escalation",
+    "input": {
+      "employee_id": "EMP006",
+      "certification_goal": "PL-400",
+      "role": "Power Platform Developer",
+      "skill_gaps": ["power_apps", "power_automate", "dataverse"],
+      "completed_certifications": ["MS-900", "PL-900"],
+      "completion_percentage": 30,
+      "last_activity_date": "2026-06-01",
+      "assessment_answers": {"Q01": "B", "Q02": "B", "Q03": "B", "Q04": "B", "Q05": "B"}
+    },
+    "expected_outputs": {
+      "engagement": {
+        "escalation_expected": true,
+        "status_expected": "assessment_struggling"
+      },
+      "assessment": {
+        "passed_expected": false
+      }
+    },
+    "evaluation_criteria": {
+      "accuracy_relevance": "Must correctly flag at-risk status based on Work IQ signals",
+      "reasoning_steps": "Engagement agent must log escalation decision reasoning",
+      "creativity": "Adaptive loop: escalation message must be constructive and cite specific Work IQ data",
+      "reliability": "Escalation path must not raise errors"
+    }
+  },
+  {
+    "scenario_id": "SC004",
+    "name": "Manager Insights — Engineering Department",
+    "description": "Manager queries team learning status for Engineering department",
+    "input": {
+      "department": "Engineering",
+      "certification_filter": null,
+      "query": "Which engineers are at risk of missing their certification goals?"
+    },
+    "expected_outputs": {
+      "manager_insights": {
+        "should_identify_at_risk": true,
+        "should_include_completion_rates": true,
+        "should_include_skill_gaps": true,
+        "min_insights": 2
+      }
+    },
+    "evaluation_criteria": {
+      "accuracy_relevance": "Must aggregate data correctly from team_progress.json",
+      "reasoning_steps": "Must log steps for metrics, at-risk identification, and skill coverage",
+      "ux": "Dashboard narrative must be actionable and well-structured"
+    }
+  },
+  {
+    "scenario_id": "SC005",
+    "name": "Data Scientist — DP-100 with Prerequisites",
+    "description": "Learner missing prerequisites — curator should flag them",
+    "input": {
+      "employee_id": "EMP010",
+      "certification_goal": "DP-100",
+      "role": "Data Scientist",
+      "skill_gaps": ["mlops", "model_deployment", "experiment_tracking"],
+      "completed_certifications": ["AI-900", "DP-900"],
+      "completion_percentage": 35,
+      "last_activity_date": "2026-06-06",
+      "assessment_answers": {"Q01": "A", "Q02": "B", "Q03": "A", "Q04": "B", "Q05": "A"}
+    },
+    "expected_outputs": {
+      "curator": {
+        "should_check_prerequisites": true,
+        "should_include_citations": true,
+        "required_topics": ["azure_machine_learning", "mlops"]
+      },
+      "study_plan": {
+        "should_reflect_completion": true,
+        "completion_adjustment_expected": 35
+      },
+      "engagement": {
+        "escalation_expected": true
+      }
+    },
+    "evaluation_criteria": {
+      "accuracy_relevance": "Prerequisite check must use Fabric IQ semantic model",
+      "reasoning_steps": "Study plan must log Fabric IQ query for hours budget",
+      "reliability": "At-risk detection must fire correctly for 35% completion"
+    }
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "id": "AZ-204",
+    "name": "Developing Solutions for Microsoft Azure",
+    "skills": [
+      "azure_functions", "blob_storage", "cosmos_db", "api_management",
+      "service_bus", "event_hub", "azure_cache", "app_service"
+    ],
+    "recommended_hours": 80,
+    "prerequisites": ["AZ-900"],
+    "role_alignment": ["Software Engineer", "Cloud Developer", "Backend Engineer"]
+  },
+  {
+    "id": "AZ-400",
+    "name": "Designing and Implementing Microsoft DevOps Solutions",
+    "skills": [
+      "azure_devops", "ci_cd_pipelines", "infrastructure_as_code",
+      "monitoring", "container_orchestration", "github_actions", "testing_strategies"
+    ],
+    "recommended_hours": 100,
+    "prerequisites": ["AZ-204"],
+    "role_alignment": ["DevOps Engineer", "Site Reliability Engineer", "Platform Engineer"]
+  },
+  {
+    "id": "AZ-900",
+    "name": "Microsoft Azure Fundamentals",
+    "skills": [
+      "cloud_concepts", "azure_services_overview", "security_basics",
+      "pricing_sla", "azure_governance"
+    ],
+    "recommended_hours": 32,
+    "prerequisites": [],
+    "role_alignment": ["All roles", "IT Manager", "Business Analyst", "Project Manager"]
+  },
+  {
+    "id": "DP-100",
+    "name": "Designing and Implementing a Data Science Solution on Azure",
+    "skills": [
+      "azure_machine_learning", "feature_engineering", "model_training",
+      "mlops", "responsible_ai", "experiment_tracking", "model_deployment"
+    ],
+    "recommended_hours": 120,
+    "prerequisites": ["AZ-900", "DP-900"],
+    "role_alignment": ["Data Scientist", "ML Engineer", "AI/ML Engineer", "Data Engineer"]
+  },
+  {
+    "id": "SC-900",
+    "name": "Microsoft Security, Compliance, and Identity Fundamentals",
+    "skills": [
+      "security_fundamentals", "compliance_basics", "identity_concepts",
+      "microsoft_security_solutions"
+    ],
+    "recommended_hours": 30,
+    "prerequisites": [],
+    "role_alignment": ["Security Analyst", "IT Manager", "Compliance Officer", "All roles"]
+  },
+  {
+    "id": "AI-102",
+    "name": "Designing and Implementing a Microsoft Azure AI Solution",
+    "skills": [
+      "azure_openai", "cognitive_services", "azure_ai_search",
+      "responsible_ai", "computer_vision", "natural_language_processing",
+      "azure_bot_service"
+    ],
+    "recommended_hours": 90,
+    "prerequisites": ["AI-900", "AZ-900"],
+    "role_alignment": ["AI/ML Engineer", "Software Engineer", "Data Scientist", "Cloud Architect"]
+  },
+  {
+    "id": "PL-400",
+    "name": "Microsoft Power Platform Developer",
+    "skills": [
+      "power_apps", "power_automate", "dataverse", "custom_connectors",
+      "pcf_controls", "azure_integration", "power_fx"
+    ],
+    "recommended_hours": 70,
+    "prerequisites": ["PL-900"],
+    "role_alignment": ["Power Platform Developer", "Citizen Developer", "Business Applications Developer"]
+  },
+  {
+    "id": "MS-900",
+    "name": "Microsoft 365 Fundamentals",
+    "skills": [
+      "microsoft_365_services", "teams_basics", "sharepoint_basics",
+      "security_compliance_m365", "cloud_deployment_models"
+    ],
+    "recommended_hours": 28,
+    "prerequisites": [],
+    "role_alignment": ["IT Manager", "IT Administrator", "Business User", "All roles"]
+  }
+]

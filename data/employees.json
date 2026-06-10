@@ -1,0 +1,122 @@
+[
+  {
+    "employee_id": "EMP001",
+    "name": "Alex Rivera",
+    "role": "Cloud Solutions Architect",
+    "department": "Engineering",
+    "certifications_completed": ["AZ-900", "AZ-104"],
+    "certifications_in_progress": ["AZ-305"],
+    "meeting_hours_per_week": 12,
+    "focus_hours_per_week": 20,
+    "preferred_learning_slot": "morning",
+    "skill_gaps": ["networking", "identity_management", "cost_optimization"]
+  },
+  {
+    "employee_id": "EMP002",
+    "name": "Jordan Patel",
+    "role": "Data Engineer",
+    "department": "Data & Analytics",
+    "certifications_completed": ["AZ-900", "DP-900"],
+    "certifications_in_progress": ["DP-100"],
+    "meeting_hours_per_week": 8,
+    "focus_hours_per_week": 28,
+    "preferred_learning_slot": "afternoon",
+    "skill_gaps": ["machine_learning", "azure_ml", "feature_engineering"]
+  },
+  {
+    "employee_id": "EMP003",
+    "name": "Morgan Chen",
+    "role": "Security Engineer",
+    "department": "Security",
+    "certifications_completed": ["SC-900"],
+    "certifications_in_progress": ["AZ-500"],
+    "meeting_hours_per_week": 15,
+    "focus_hours_per_week": 16,
+    "preferred_learning_slot": "evening",
+    "skill_gaps": ["zero_trust", "threat_protection", "compliance"]
+  },
+  {
+    "employee_id": "EMP004",
+    "name": "Taylor Kim",
+    "role": "DevOps Engineer",
+    "department": "Engineering",
+    "certifications_completed": ["AZ-900", "AZ-104"],
+    "certifications_in_progress": ["AZ-400"],
+    "meeting_hours_per_week": 10,
+    "focus_hours_per_week": 22,
+    "preferred_learning_slot": "morning",
+    "skill_gaps": ["ci_cd_pipelines", "infrastructure_as_code", "monitoring"]
+  },
+  {
+    "employee_id": "EMP005",
+    "name": "Casey Thompson",
+    "role": "AI/ML Engineer",
+    "department": "Data & Analytics",
+    "certifications_completed": ["AI-900", "DP-100"],
+    "certifications_in_progress": ["AI-102"],
+    "meeting_hours_per_week": 6,
+    "focus_hours_per_week": 32,
+    "preferred_learning_slot": "morning",
+    "skill_gaps": ["azure_openai", "cognitive_services", "responsible_ai"]
+  },
+  {
+    "employee_id": "EMP006",
+    "name": "Riley Johnson",
+    "role": "Power Platform Developer",
+    "department": "Business Applications",
+    "certifications_completed": ["MS-900", "PL-900"],
+    "certifications_in_progress": ["PL-400"],
+    "meeting_hours_per_week": 18,
+    "focus_hours_per_week": 14,
+    "preferred_learning_slot": "lunch",
+    "skill_gaps": ["power_apps", "power_automate", "dataverse"]
+  },
+  {
+    "employee_id": "EMP007",
+    "name": "Sam Nguyen",
+    "role": "Software Engineer",
+    "department": "Engineering",
+    "certifications_completed": ["AZ-900"],
+    "certifications_in_progress": ["AZ-204"],
+    "meeting_hours_per_week": 9,
+    "focus_hours_per_week": 26,
+    "preferred_learning_slot": "afternoon",
+    "skill_gaps": ["azure_functions", "cosmos_db", "api_management"]
+  },
+  {
+    "employee_id": "EMP008",
+    "name": "Dana Williams",
+    "role": "IT Manager",
+    "department": "IT Operations",
+    "certifications_completed": ["MS-900", "AZ-900"],
+    "certifications_in_progress": ["MS-700"],
+    "meeting_hours_per_week": 22,
+    "focus_hours_per_week": 10,
+    "preferred_learning_slot": "evening",
+    "skill_gaps": ["teams_administration", "governance", "compliance_management"]
+  },
+  {
+    "employee_id": "EMP009",
+    "name": "Drew Martinez",
+    "role": "Cloud Security Architect",
+    "department": "Security",
+    "certifications_completed": ["AZ-900", "AZ-104", "SC-900", "AZ-500"],
+    "certifications_in_progress": ["SC-300"],
+    "meeting_hours_per_week": 14,
+    "focus_hours_per_week": 18,
+    "preferred_learning_slot": "morning",
+    "skill_gaps": ["identity_governance", "privileged_access", "conditional_access"]
+  },
+  {
+    "employee_id": "EMP010",
+    "name": "Jamie Lee",
+    "role": "Data Scientist",
+    "department": "Data & Analytics",
+    "certifications_completed": ["AI-900", "DP-900"],
+    "certifications_in_progress": ["DP-100"],
+    "meeting_hours_per_week": 7,
+    "focus_hours_per_week": 30,
+    "preferred_learning_slot": "afternoon",
+    "skill_gaps": ["mlops", "model_deployment", "experiment_tracking"]
+  }
+]
